@@ -42,5 +42,11 @@ namespace SA.LeavePlatform.Service.Controllers
             var projets = await _repository.GetAllAsync();
             return Ok(projets);
         }
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var projet = await _repository.GetByIdAsync(id);
+            return Ok(projet);
+        }
     }
 }

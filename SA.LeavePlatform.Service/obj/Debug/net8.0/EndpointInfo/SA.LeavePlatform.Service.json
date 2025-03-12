@@ -67,6 +67,27 @@
             "description": "OK"
           }
         }
+      },
+      "get": {
+        "tags": [
+          "Affectation"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
       }
     },
     "/api/Employee": {
@@ -112,6 +133,27 @@
     },
     "/api/Employee/{id}": {
       "delete": {
+        "tags": [
+          "Employee"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
         "tags": [
           "Employee"
         ],
@@ -235,6 +277,27 @@
             "description": "OK"
           }
         }
+      },
+      "get": {
+        "tags": [
+          "LeaveDoc"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
       }
     },
     "/api/LeaveRequest": {
@@ -280,6 +343,27 @@
     },
     "/api/LeaveRequest/{id}": {
       "delete": {
+        "tags": [
+          "LeaveRequest"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
         "tags": [
           "LeaveRequest"
         ],
@@ -363,6 +447,27 @@
             "description": "OK"
           }
         }
+      },
+      "get": {
+        "tags": [
+          "LeaveType"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
       }
     },
     "/api/Projet": {
@@ -408,6 +513,27 @@
     },
     "/api/Projet/{id}": {
       "delete": {
+        "tags": [
+          "Projet"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
         "tags": [
           "Projet"
         ],
@@ -491,6 +617,27 @@
             "description": "OK"
           }
         }
+      },
+      "get": {
+        "tags": [
+          "Role"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
       }
     },
     "/api/Status": {
@@ -536,6 +683,27 @@
     },
     "/api/Status/{id}": {
       "delete": {
+        "tags": [
+          "Status"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
         "tags": [
           "Status"
         ],

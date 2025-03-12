@@ -31,7 +31,7 @@ namespace SA.LeavePlatform.Service.Query
         }
         public async Task<LeaveRequest> GetByIdAsync(int id)
         {
-            return await dbContext.LeaveRequests.FindAsync(id);
+            return await dbContext.LeaveRequests.FindAsync(id) ?? throw new KeyNotFoundException("Leave Request not found");
         }
 
         public async Task DeleteLeaveRequestAsync(int id)

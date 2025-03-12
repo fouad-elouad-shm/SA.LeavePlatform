@@ -29,7 +29,7 @@ namespace SA.LeavePlatform.Service.Query
         }
         public async Task<Employee> GetByIdAsync(int id)
         {
-            return await dbContext.Employees.FindAsync(id);
+            return await dbContext.Employees.FindAsync(id) ?? throw new KeyNotFoundException("Employee not found");
         }
 
         public async Task DeleteEmployeeAsync(int id)
@@ -44,10 +44,12 @@ namespace SA.LeavePlatform.Service.Query
         public async Task UpdateAsync(Employee employee)
         {
             dbContext.Employees.Update(employee);
+
+            // S'assurer que l'ID n'est pas modifié
+            dbContext.Entry(employee).Property(e => e.Id).IsModified = false;
+
             await dbContext.SaveChangesAsync();
         }
-
-
 
         public void AddEmployee(Employee employee)
         {

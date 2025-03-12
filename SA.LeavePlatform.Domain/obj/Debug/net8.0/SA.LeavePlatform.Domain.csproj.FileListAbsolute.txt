@@ -9,3 +9,5 @@ C:\Users\salma\source\repos\SA.LeavePlatform\SA.LeavePlatform.Domain\obj\Debug\n
 C:\Users\salma\source\repos\SA.LeavePlatform\SA.LeavePlatform.Domain\obj\Debug\net8.0\refint\SA.LeavePlatform.Domain.dll
 C:\Users\salma\source\repos\SA.LeavePlatform\SA.LeavePlatform.Domain\obj\Debug\net8.0\SA.LeavePlatform.Domain.pdb
 C:\Users\salma\source\repos\SA.LeavePlatform\SA.LeavePlatform.Domain\obj\Debug\net8.0\ref\SA.LeavePlatform.Domain.dll
+C:\Users\salma\source\repos\SA.LeavePlatform\SA.LeavePlatform.Domain\obj\Debug\net8.0\SA.LeavePlatform.Domain.csproj.AssemblyReference.cache
+C:\Users\salma\source\repos\SA.LeavePlatform\SA.LeavePlatform.Domain\obj\Debug\net8.0\SA.LeavePlatform.Domain.sourcelink.json

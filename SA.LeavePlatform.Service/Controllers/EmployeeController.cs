@@ -48,21 +48,44 @@ namespace SA.LeavePlatform.Service.Controllers
             var employees = await _repository.GetAllAsync();
             return Ok(employees);
         }
-        [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] Employee employee)
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
         {
-            if (id != employee.Id)
+            var employee = await _repository.GetByIdAsync(id);
+
+            if (employee == null)
             {
-                return BadRequest("ID mismatch");
+                return NotFound(); // Retourne 404 si l'employé n'est pas trouvé
             }
 
+            return Ok(employee); // Retourne l'employé avec le statut 200 OK
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(int id, [FromBody] Employee updatedEmployee)
+        {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            await _repository.UpdateAsync(employee);
-            return NoContent();
+            var existingEmployee = await _repository.GetByIdAsync(id);
+            if (existingEmployee == null)
+            {
+                return NotFound("Employee not found");
+            }
+
+            // Mettre à jour uniquement les champs nécessaires (sans toucher à l'ID)
+            existingEmployee.Name = updatedEmployee.Name;
+            existingEmployee.LastName = updatedEmployee.LastName;
+            existingEmployee.Phone = updatedEmployee.Phone;
+            existingEmployee.Email = updatedEmployee.Email;
+
+            existingEmployee.RoleId = updatedEmployee.RoleId;
+
+            await _repository.UpdateAsync(existingEmployee);
+            return NoContent(); // 204 No Content pour indiquer une mise à jour réussie
         }
+
     }
 }

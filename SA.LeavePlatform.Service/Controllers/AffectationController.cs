@@ -22,7 +22,8 @@ namespace SA.LeavePlatform.Service.Controllers
                 return BadRequest("EmployeeId and ProjetId must be provided.");
             }
             await _repository.AddAffectationAsync(affectation);
-            // Ensure Role is not included when saving
+           
+
             affectation.Projet = null;
             affectation.Employee = null;
 
@@ -37,7 +38,7 @@ namespace SA.LeavePlatform.Service.Controllers
                 return NotFound(); // Return 404 if the status is not found
             }
 
-            // Delete the status
+            // Delete the Affectation
             await _repository.DeleteAffectationAsync(id);
 
             // Return a 204 No Content response to indicate successful deletion
@@ -48,6 +49,12 @@ namespace SA.LeavePlatform.Service.Controllers
         {
             var affectations = await _repository.GetAllAsync();
             return Ok(affectations);
+        }
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var affectation = await _repository.GetByIdAsync(id);
+            return Ok(affectation);
         }
     }
 }

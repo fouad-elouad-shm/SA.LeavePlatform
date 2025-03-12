@@ -42,5 +42,11 @@ namespace SA.LeavePlatform.Service.Controllers
             var roles = await _repository.GetAllAsync();
             return Ok(roles);
         }
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var role = await _repository.GetByIdAsync(id);
+            return Ok(role);
+        }
     }
 }

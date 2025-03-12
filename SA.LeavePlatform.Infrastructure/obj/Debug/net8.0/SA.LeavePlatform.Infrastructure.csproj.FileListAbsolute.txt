@@ -15,3 +15,4 @@ C:\Users\salma\source\repos\SA.LeavePlatform\SA.LeavePlatform.Infrastructure\obj
 C:\Users\salma\source\repos\SA.LeavePlatform\SA.LeavePlatform.Infrastructure\obj\Debug\net8.0\SA.LeavePlatform.Infrastructure.pdb
 C:\Users\salma\source\repos\SA.LeavePlatform\SA.LeavePlatform.Infrastructure\obj\Debug\net8.0\SA.LeavePlatform.Infrastructure.genruntimeconfig.cache
 C:\Users\salma\source\repos\SA.LeavePlatform\SA.LeavePlatform.Infrastructure\obj\Debug\net8.0\ref\SA.LeavePlatform.Infrastructure.dll
+C:\Users\salma\source\repos\SA.LeavePlatform\SA.LeavePlatform.Infrastructure\obj\Debug\net8.0\SA.LeavePlatform.Infrastructure.sourcelink.json

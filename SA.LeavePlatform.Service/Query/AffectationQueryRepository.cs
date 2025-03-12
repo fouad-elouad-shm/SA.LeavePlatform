@@ -28,7 +28,7 @@ namespace SA.LeavePlatform.Service.Query
         }
         public async Task<Affectation> GetByIdAsync(int id)
         {
-            return await dbContext.Affectations.FindAsync(id);
+            return await dbContext.Affectations.FindAsync(id) ?? throw new KeyNotFoundException("Affectation not found");
         }
 
         public async Task DeleteAffectationsAsync(int id)
