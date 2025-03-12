@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\SA.LeavePlatform.Service.props" />
-</Project>
