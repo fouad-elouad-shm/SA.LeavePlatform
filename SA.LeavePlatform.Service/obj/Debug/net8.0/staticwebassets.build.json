@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "t1WRrUl/IoJi82fIkM84XvYb5UHtny5KMuPIlHRp5zc=",
+  "Source": "SA.LeavePlatform.Service",
+  "BasePath": "_content/SA.LeavePlatform.Service",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

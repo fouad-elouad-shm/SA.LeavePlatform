@@ -1,0 +1,6 @@
+@SA.LeavePlatform.Service_HostAddress = http://localhost:5262
+
+GET {{SA.LeavePlatform.Service_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
