@@ -27,7 +27,7 @@ namespace SA.LeavePlatform.Service.Query
         }
         public async Task<Status> GetByIdAsync(int id)
         {
-            return await dbContext.Statuses.FindAsync(id);
+            return await dbContext.Statuses.FindAsync(id) ?? throw new KeyNotFoundException("Status not found");
         }
 
         public async Task DeleteStatusAsync(int id)

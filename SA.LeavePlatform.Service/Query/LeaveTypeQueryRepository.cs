@@ -22,7 +22,7 @@ namespace SA.LeavePlatform.Service.Query
         }
         public async Task<LeaveType> GetByIdAsync(int id)
         {
-            return await dbContext.LeaveTypes.FindAsync(id);
+            return await dbContext.LeaveTypes.FindAsync(id) ?? throw new KeyNotFoundException("Leave type not found");
         }
 
         public async Task DeleteLeaveTypeAsync(int id)

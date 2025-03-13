@@ -45,5 +45,11 @@ namespace SA.LeavePlatform.Service.Controllers
             // Return a 204 No Content response to indicate successful deletion
             return NoContent();
         }
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var status = await _repository.GetByIdAsync(id);
+            return Ok(status);
+        }
     }
 }

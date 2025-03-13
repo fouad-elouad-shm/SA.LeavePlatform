@@ -24,7 +24,7 @@ namespace SA.LeavePlatform.Service.Query
         }
         public async Task<Role> GetByIdAsync(int id)
         {
-            return await dbContext.Roles.FindAsync(id);
+            return await dbContext.Roles.FindAsync(id) ?? throw new KeyNotFoundException("Role not found");
         }
 
         public async Task DeleteRoleAsync(int id)
@@ -35,6 +35,12 @@ namespace SA.LeavePlatform.Service.Query
                 dbContext.Roles.Remove(role);
                 await dbContext.SaveChangesAsync();
             }
+        }
+        // Update to RoleQueryRepository.cs - add this method
+        public async Task UpdateRoleAsync(Role role)
+        {
+            dbContext.Roles.Update(role);
+            await dbContext.SaveChangesAsync();
         }
 
 

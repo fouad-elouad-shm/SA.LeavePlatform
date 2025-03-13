@@ -48,5 +48,11 @@ namespace SA.LeavePlatform.Service.Controllers
             var leaveDocs = await _repository.GetAllAsync();
             return Ok(leaveDocs);
         }
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var leaveDoc = await _repository.GetByIdAsync(id);
+            return Ok(leaveDoc);
+        }
     }
 }

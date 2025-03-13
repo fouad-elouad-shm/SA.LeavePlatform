@@ -25,7 +25,7 @@ namespace SA.LeavePlatform.Service.Query
         }
         public async Task<LeaveDoc> GetByIdAsync(int id)
         {
-            return await dbContext.LeaveDocs.FindAsync(id);
+            return await dbContext.LeaveDocs.FindAsync(id) ?? throw new KeyNotFoundException("Leave Document not found");
         }
 
         public async Task DeleteLeaveDocAsync(int id)

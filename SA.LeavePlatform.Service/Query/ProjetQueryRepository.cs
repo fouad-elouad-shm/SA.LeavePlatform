@@ -24,7 +24,7 @@ namespace SA.LeavePlatform.Service.Query
         }
         public async Task<Projet> GetByIdAsync(int id)
         {
-            return await dbContext.Projets.FindAsync(id);
+            return await dbContext.Projets.FindAsync(id) ?? throw new KeyNotFoundException("Projet not found");
         }
 
         public async Task DeleteProjetAsync(int id)
