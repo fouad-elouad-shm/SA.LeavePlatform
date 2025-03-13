@@ -369,36 +369,56 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "SA.LeavePlatform.Service.Controllers.RoleController",
-    "Method": "AddRole",
+    "ContainingType": "MediatRAPI.Controllers.RoleController",
+    "Method": "GetAllRoles",
+    "RelativePath": "api/Role",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[SA.LeavePlatform.Domain.Entities.Role, SA.LeavePlatform.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MediatRAPI.Controllers.RoleController",
+    "Method": "CreateRole",
     "RelativePath": "api/Role",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "role",
-        "Type": "SA.LeavePlatform.Domain.Entities.Role",
+        "Name": "request",
+        "Type": "SA.LeavePlatform.Service.MediatRrequests.RoleRequests.CreateRoleRequest",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "SA.LeavePlatform.Domain.Entities.Role",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
-    "ContainingType": "SA.LeavePlatform.Service.Controllers.RoleController",
-    "Method": "GetAll",
-    "RelativePath": "api/Role",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "SA.LeavePlatform.Service.Controllers.RoleController",
-    "Method": "DeleteRole",
+    "ContainingType": "MediatRAPI.Controllers.RoleController",
+    "Method": "GetRole",
     "RelativePath": "api/Role/{id}",
-    "HttpMethod": "DELETE",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -408,13 +428,54 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "SA.LeavePlatform.Domain.Entities.Role",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
-    "ContainingType": "SA.LeavePlatform.Service.Controllers.RoleController",
-    "Method": "GetById",
+    "ContainingType": "MediatRAPI.Controllers.RoleController",
+    "Method": "UpdateRole",
     "RelativePath": "api/Role/{id}",
-    "HttpMethod": "GET",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "SA.LeavePlatform.Service.MediatRrequests.RoleRequests.UpdateRoleRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SA.LeavePlatform.Domain.Entities.Role",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MediatRAPI.Controllers.RoleController",
+    "Method": "DeleteRole",
+    "RelativePath": "api/Role/{id}",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [

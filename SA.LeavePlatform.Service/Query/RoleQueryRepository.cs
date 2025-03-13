@@ -36,6 +36,12 @@ namespace SA.LeavePlatform.Service.Query
                 await dbContext.SaveChangesAsync();
             }
         }
+        // Update to RoleQueryRepository.cs - add this method
+        public async Task UpdateRoleAsync(Role role)
+        {
+            dbContext.Roles.Update(role);
+            await dbContext.SaveChangesAsync();
+        }
 
 
         public void AddRole(Role role)

@@ -4,7 +4,7 @@ using Pomelo.EntityFrameworkCore.MySql;
 using SA.LeavePlatform.Infrastructure;
 using SA.LeavePlatform.Service.Query;
 
-var builder = WebApplication.CreateBuilder(args);
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();

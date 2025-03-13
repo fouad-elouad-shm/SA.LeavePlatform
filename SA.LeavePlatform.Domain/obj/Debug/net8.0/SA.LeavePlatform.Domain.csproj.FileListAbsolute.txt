@@ -11,3 +11,16 @@ C:\Users\salma\source\repos\SA.LeavePlatform\SA.LeavePlatform.Domain\obj\Debug\n
 C:\Users\salma\source\repos\SA.LeavePlatform\SA.LeavePlatform.Domain\obj\Debug\net8.0\ref\SA.LeavePlatform.Domain.dll
 C:\Users\salma\source\repos\SA.LeavePlatform\SA.LeavePlatform.Domain\obj\Debug\net8.0\SA.LeavePlatform.Domain.csproj.AssemblyReference.cache
 C:\Users\salma\source\repos\SA.LeavePlatform\SA.LeavePlatform.Domain\obj\Debug\net8.0\SA.LeavePlatform.Domain.sourcelink.json
+C:\Users\Anas\source\repos\SA.LeavePlatform\SA.LeavePlatform.Domain\bin\Debug\net8.0\SA.LeavePlatform.Domain.deps.json
+C:\Users\Anas\source\repos\SA.LeavePlatform\SA.LeavePlatform.Domain\bin\Debug\net8.0\SA.LeavePlatform.Domain.dll
+C:\Users\Anas\source\repos\SA.LeavePlatform\SA.LeavePlatform.Domain\bin\Debug\net8.0\SA.LeavePlatform.Domain.pdb
+C:\Users\Anas\source\repos\SA.LeavePlatform\SA.LeavePlatform.Domain\obj\Debug\net8.0\SA.LeavePlatform.Domain.csproj.AssemblyReference.cache
+C:\Users\Anas\source\repos\SA.LeavePlatform\SA.LeavePlatform.Domain\obj\Debug\net8.0\SA.LeavePlatform.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Anas\source\repos\SA.LeavePlatform\SA.LeavePlatform.Domain\obj\Debug\net8.0\SA.LeavePlatform.Domain.AssemblyInfoInputs.cache
+C:\Users\Anas\source\repos\SA.LeavePlatform\SA.LeavePlatform.Domain\obj\Debug\net8.0\SA.LeavePlatform.Domain.AssemblyInfo.cs
+C:\Users\Anas\source\repos\SA.LeavePlatform\SA.LeavePlatform.Domain\obj\Debug\net8.0\SA.LeavePlatform.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Anas\source\repos\SA.LeavePlatform\SA.LeavePlatform.Domain\obj\Debug\net8.0\SA.LeavePlatform.Domain.sourcelink.json
+C:\Users\Anas\source\repos\SA.LeavePlatform\SA.LeavePlatform.Domain\obj\Debug\net8.0\SA.LeavePlatform.Domain.dll
+C:\Users\Anas\source\repos\SA.LeavePlatform\SA.LeavePlatform.Domain\obj\Debug\net8.0\refint\SA.LeavePlatform.Domain.dll
+C:\Users\Anas\source\repos\SA.LeavePlatform\SA.LeavePlatform.Domain\obj\Debug\net8.0\SA.LeavePlatform.Domain.pdb
+C:\Users\Anas\source\repos\SA.LeavePlatform\SA.LeavePlatform.Domain\obj\Debug\net8.0\ref\SA.LeavePlatform.Domain.dll

@@ -9,5 +9,6 @@ namespace SA.LeavePlatform.Service.Query
         Task AddRoleAsync(Role role);
         Task<Role> GetByIdAsync(int id); // Add this method
         Task DeleteRoleAsync(int id); // Add this method
+        Task UpdateRoleAsync(Role role);
     }
 }
